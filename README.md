@@ -1,5 +1,5 @@
 # arrays-veusch
-#Project description:
+Project description:
 Array exercise
 
 Development platform:
