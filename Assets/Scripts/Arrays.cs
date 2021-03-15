@@ -14,7 +14,19 @@ public class Arrays : MonoBehaviour
         WahrOderFalschMitArray();
         WahrOderFalschKlassisch();
 
+        ArrayBeispielSimpleKlassisch();
 
+    }
+
+    private static void ArrayBeispielSimpleKlassisch()
+    {
+        string name1 = "Verena";
+        string name2 = "Magdalena";
+        string name3 = "Volkmar";
+
+        Debug.Log("Erster Name lautet: " + name1);
+        Debug.Log("Zweiter Name lautet: " + name2);
+        Debug.Log("Dritter Name lautet: " + name3);
     }
 
     private static void ArrayBeispielZweidimensional()
@@ -31,6 +43,12 @@ public class Arrays : MonoBehaviour
 
         MieterImStockwerkAusgeben(wohnblockMieter, 0);
         MieterImStockwerkAusgeben(wohnblockMieter, 1);
+
+
+
+
+
+
     }
 
     private static void ArrayBeispielSimple()
@@ -44,6 +62,7 @@ public class Arrays : MonoBehaviour
             Debug.Log("Array pos: " + i + " " + names[i]);
     }
 
+    
     private static void WahrOderFalschKlassisch()
     {
         bool wahrFalsch1 = true;
@@ -74,7 +93,7 @@ public class Arrays : MonoBehaviour
             if (wohnblockMieter[stockwerk, i]==null)
                  Debug.Log("Kein Mieter im Stockwerk: "+stockwerk+" Nummer: "+(i+1));
             else
-                Debug.Log("Im Stockwerk: " + stockwerk + "wohnt in Nummer: " + (i + 1) + " Mieter: " + wohnblockMieter[stockwerk, i]);
+                Debug.Log("Im Stockwerk: " + stockwerk + " wohnt in Nummer: " + (i + 1) + " Mieter: " + wohnblockMieter[stockwerk, i]);
         }
            
     }
